@@ -107,8 +107,8 @@ count = 0
 for test in test_str:
     print("\n--------------------------------------------------------------------------------------------")
     md2 = MD2(test)
-    print(type(md2))
     print('Calculated MD2("'+ test +'") = ' + md2)
     print('Original MD2("'+ test +'")   = ' + ans_str[count])
+    print('Matching: ', str(md2) == str(ans_str[count]))
     print("--------------------------------------------------------------------------------------------\n")
     count += 1
